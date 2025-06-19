@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alliy</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/material-design-iconic-font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- Nabvar header -->
+    <header class="navbar-header" id="navbar-header">
+      <a href="#" class="brand-link is-size-3">
+        <!--img src="img/logo.png" alt="Logo" style="height: 30px; vertical-align: middle;"-->
+        <span class="brand">Alliy</span>
+      </a>
+      <button class="navbar-menu-mobile open is-size-3 is-hidden-desktop" id="navbar-menu-mobile">
+        <i class="zmdi zmdi-menu"></i>
+      </button>
+    </header>
+   <ul class="navbar-container" id="navbar-container">
+  <li class="navbar-item">
+    <a data-scroll href="#top" id="inicio" class="navbar-a navbar-link-active">Inicio</a>
+  </li>
+  <li class="navbar-item">
+    <a data-scroll href="#about" id="acercaDe" class="navbar-a">Sobre nosotros</a>
+  </li>
+   <li class="navbar-item">
+    <a data-scroll href="#factores" id="factoresNav" class="navbar-a">Factores Rurales</a>
+  </li>
+  <li class="navbar-item">
+    <a data-scroll href="#section2" id="section" class="navbar-a">AlliyBot</a>
+  </li>
+  <li class="navbar-item">
+    <a data-scroll href="#gallery" id="photos" class="navbar-a">Cultura Mental</a>
+  </li>
+  <li class="navbar-item">
+  <a data-scroll href="#consejos" class="navbar-a">Consejos</a>
+</li>
+
+  <li class="navbar-item">
+    <a data-scroll href="#contacto" id="form" class="navbar-a">Contacto</a>
+  </li>
+  <li class="navbar-item">
+  <a href="#" id="btn-traducir" class="navbar-a" onclick="traducirSitio(); return false;">
+    Traducir al Kichwa
+  </a>
+</li>
+
+</ul>
+
+
+  </nav>
+ 
+  <!-- Sección del carrusel -->
+
+  <div class="section-body" id="top">
+  <div class="slide-contenedor">
+    <div class="miSlider fade">
+      <div class="slider-body">
+        <span class="tag-slider is-size-5-desktop">PUCE</span>
+        <h2 id="inicio_titulo" class="is-size-3-mobile has-text-weight-bold slider-title">Salud Mental</h2>
+        <p id="inicio_frase" class="description-slider is-size-7-mobile">
+          Cuidar tu mente es un acto de valentía, no de debilidad
+        </p>
+      </div>
+      <img src="img/slider-1.jpg" alt="">
+    </div>
+
+    <div class="miSlider fade">
+      <div class="slider-body">
+        <span class="tag-slider">PUCE</span>
+        <h2 id="psicologia_titulo" class="is-size-3-mobile has-text-weight-bold slider-title">Psicologia</h2>
+        <p id="psicologia_frase" class="description-slider is-size-7-mobile">
+          La psicología no te cambia, te ayuda a entenderte y crecer desde adentro.
+        </p>
+      </div>
+      <img src="img/slider-2.jpg" alt="">
+    </div>
+
+    <div class="miSlider fade">
+      <div class="slider-body">
+        <span class="tag-slider">PUCE</span>
+        <h2 id="alliy_titulo" class="is-size-3-mobile has-text-weight-bold slider-title">Alliy</h2>
+        <p id="alliy_frase" class="description-slider is-size-7-mobile">
+          Yuyay kawsayta alli ruray, kawsaylla alli shamukani.
+        </p>
+      </div>
+      <img src="img/slider-3.jpg" alt="">
+    </div>
+
+    <div class="direcciones">
+      <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+      <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="posicionSlide(1)"></span>
+      <span class="dot" onclick="posicionSlide(2)"></span>
+      <span class="dot" onclick="posicionSlide(3)"></span>
+    </div>
+  </div>
+</div>
+
+    <!-- About me -->
+<div class="container" id="about">
+  <div class="columns is-vcentered">
+    <div class="column is-half">
+      <div class="about-me">
+        <figure class="image">
+          <img class="about-me-img" src="img/about-me-mobile.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+    <div class="column is-half section-about-me">
+      <h1 id="sobre_nosotros_titulo" class="title is-size-3-mobile is-size-2-tablet has-text-weight">Sobre Nosotros</h1>
+      <h5 id="alliy_titulo_2" class="subtitle is-size-6-mobile is-size-5-tablet separator">Alliy</h5>
+      <p id="sobre_nosotros_parrafo1" class="text is-size-7-mobile">
+        Alliy es una plataforma creada para brindar orientación emocional y educativa
+        a personas que han vivido
+        o están viviendo situaciones díficles. Nuestro enfoque está en
+        la salud mental, el autocuidado y la prevención.
+      </p>
+      <p id="sobre_nosotros_parrafo2" class="text is-size-7-mobile">
+        Nuestro objetivo es ser un espacio de apoyo empático y seguro, donde puedas informarte,
+        identificar señales de alerta, conocer tus derechos y acceder a recursos útiles para tu bienestar emocional.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- FACTORES RURALES -->
+<section id="factores" class="py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2 id="factores_titulo" class="has-text-centered has-text-primary is-size-3 mb-4">
+      Factores que afectan la salud mental en comunidades rurales
+    </h2>
+    <p id="factores_intro" class="has-text-centered has-text-grey mb-5">
+      Las personas que viven en comunidades rurales enfrentan retos particulares que pueden afectar su salud emocional y psicológica. Reconocer estos factores es esencial para fomentar el bienestar en estas zonas.
+    </p>
+    <div class="columns is-multiline">
+      <div class="column is-half">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/aislamiento.jpg" alt="Aislamiento geográfico y social">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p id="factor1_titulo" class="title is-5 has-text-primary">Aislamiento geográfico y social</p>
+            <p id="factor1_texto" class="content is-hidden">
+              La lejanía de los centros urbanos puede limitar el acceso a servicios básicos, incluyendo salud mental. Esto puede generar sentimientos de soledad y desconexión.
+            </p>
+            <button class="button is-small is-outlined is-primary" onclick="toggleTexto('factor1_texto')">Leer más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/pobreza.jpeg" alt="Desempleo y pobreza">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p id="factor2_titulo" class="title is-5 has-text-danger">Desempleo y pobreza</p>
+            <p id="factor2_texto" class="content is-hidden">
+              La falta de oportunidades laborales y la precariedad económica generan estrés constante, inseguridad y baja autoestima.
+            </p>
+            <button class="button is-small is-outlined is-danger" onclick="toggleTexto('factor2_texto')">Leer más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/salud.png" alt="Acceso limitado a servicios de salud">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p id="factor3_titulo" class="title is-5 has-text-warning">Acceso limitado a servicios de salud</p>
+            <p id="factor3_texto" class="content is-hidden">
+              En muchas comunidades rurales no existen centros de salud mental, ni profesionales disponibles, lo que impide un tratamiento oportuno.
+            </p>
+            <button class="button is-small is-outlined is-warning" onclick="toggleTexto('factor3_texto')">Leer más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/estigma.jpeg" alt="Estigmas culturales y desinformación">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p id="factor4_titulo" class="title is-5 has-text-success">Estigmas culturales y desinformación</p>
+            <p id="factor4_texto" class="content is-hidden">
+              Muchas veces los problemas de salud mental son minimizados, ignorados o mal interpretados, impidiendo que las personas busquen ayuda.
+            </p>
+            <button class="button is-small is-outlined is-success" onclick="toggleTexto('factor4_texto')">Leer más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleTexto(id) {
+    const p = document.getElementById(id);
+    p.classList.toggle('is-hidden');
+  }
+</script>
+
+
+<div id="section2" class="hero my-hero" style="--banner: url(../img/hero-img.jpg); --bg-atachment: fixed;">
+  <div class="container-hero">
+
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-full has-text-centered">
+          <h1 id="alliybot_titulo" class="title has-text-white is-size-3-mobile is-size-1-tablet">
+            AlliyBot
+          </h1>
+          <h5 id="alliybot_subtitulo" class="subtitle is-size-5">
+            Alguien que te escucha
+          </h5>
+        </div>
+
+        <div class="column">
+          <div class="banner-container">
+            <span class="container-icon">
+              <i class="zmdi zmdi-balance zmdi-hc-2x"></i>
+            </span>
+            <h4 id="ayuda_legal_titulo" class="is-size-5 has-text-centered has-text-weight-bold">Ayuda legal</h4>
+            <p id="ayuda_legal_texto" class="has-text-centered is-size-7-mobile">
+              Consulta tus dudas de qué hacer en caso de que seas víctima de violencia de género, intrafamiliar o
+              no te sientas seguro/a en tu hogar.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="banner-container">
+            <span class="container-icon">
+              <i class="zmdi zmdi-comment-text-alt zmdi-hc-2x"></i>
+            </span>
+            <h4 id="apoyo_emocional_titulo" class="is-size-5 has-text-centered has-text-weight-bold">Apoyo emocional</h4>
+            <p id="apoyo_emocional_texto" class="has-text-centered is-size-7-mobile">
+              A veces solo necesitamos alguien que nos escuche y con quien podamos expresarnos libremente
+              sin miedo de ser juzgados.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="banner-container">
+            <span class="container-icon">
+              <i class="zmdi zmdi-alert-triangle zmdi-hc-2x"></i>
+            </span>
+            <h4 id="emergencia_titulo" class="is-size-5 has-text-centered has-text-weight-bold">Emergencia</h4>
+            <p id="emergencia_texto" class="has-text-centered is-size-7-mobile">
+              Si te encuentras en una emergencia y no sabes qué hacer o a quién acudir, consulta tu problema y te proporcionaremos
+              el accionar más adecuado.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Galería -->
+<div class="container" id="gallery">
+  <div class="columns is-multiline">
+    <div class="column has-text-centered is-full">
+      <h1 id="cultura_mental_titulo" class="title is-size-3-mobile is-size-1-tablet has-text-weight">Cultura Mental</h1>
+      <h5 class="subtitle is-size-6"></h5>
+    </div>
+    <div class="column">
+      <div class="gallery-container" id="gallery-container">
+            <div class="gallery-item">
+              <figure class="image">
+
+                <img class="gallery-img" src="img/gallery-1-thumb.jpg" data-title="Depresion" data-description="Trastorno emocional que provoca tristeza profunda, pérdida de interés y baja energía durante semanas o meses.<br>&nbsp;Síntomas:<br>&nbsp;&nbsp;
+                  - Tristeza profunda y persistente<br>&nbsp;&nbsp;
+                  - Pérdida de interés<br>&nbsp;&nbsp;
+                  - Fatiga, baja energía<br>&nbsp;&nbsp;
+                  - Cambios en el apetito o sueño<br>&nbsp;&nbsp;
+                  - Pensamientos de inutilidad">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-2-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-2-thumb.jpg"
+                  data-title="Trastorno de ansiedad generalizada (TAG)" data-description="Preocupación constante y excesiva por situaciones cotidianas, acompañada de tensión física y dificultad para relajarse.<br> 
+Síntomas:<br>&nbsp;&nbsp;
+- Preocupación excesiva y constante<br>&nbsp;&nbsp;
+- Inquietud o tensión muscular<br>&nbsp;&nbsp;
+- Irritabilidad<br>&nbsp;&nbsp;
+- Dificultad para concentrarse<br>&nbsp;&nbsp;
+- Problemas para dormir">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+
+                <!--img class="gallery-img" src="img/gallery-3-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-3-thumb.jpg" data-title="Trastorno de pánico"
+                  data-description="Ataques súbitos de miedo intenso, con síntomas físicos como palpitaciones, temblores y sensación de ahogo.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Ataques repentinos de miedo intenso<br>&nbsp;&nbsp;
+- Palpitaciones, sudoración, temblores<br>&nbsp;&nbsp;
+- Sensación de ahogo<br>&nbsp;&nbsp;
+- Miedo a morir o perder el control"">
+              </figure>
+            </div>
+            <div class=" gallery-item">
+                <figure class="image">
+                  <!--img class="gallery-img" src="img/gallery-4-thumb.jpg" alt=""-->
+                  <img class="gallery-img" src="img/gallery-4-thumb.jpg"
+                    data-title="Trastorno obsesivo-compulsivo (TOC)" data-description="Presencia de pensamientos repetitivos no deseados (obsesiones) y conductas repetitivas para aliviar la ansiedad (compulsiones).<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Pensamientos repetitivos e intrusivos (obsesiones)<br>&nbsp;&nbsp;
+- Comportamientos repetitivos para aliviar la ansiedad (compulsiones)<br>&nbsp;&nbsp;
+- Ej: lavarse las manos constantemente, revisar puertas muchas veces">
+                </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-5-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-5-thumb.jpg"
+                  data-title="Trastorno de estrés postraumático (TEPT)" data-description="Aparece tras vivir o presenciar un evento traumático. Genera recuerdos intrusivos, pesadillas y evitación.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Revivir el trauma a través de recuerdos o pesadillas<br>&nbsp;&nbsp;
+- Evitar lugares o personas relacionadas con el evento<br>&nbsp;&nbsp;
+- Hipervigilancia, sobresaltos frecuentes<br>&nbsp;&nbsp;
+- Sentimientos de culpa o desapego">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-6-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-6-thumb.jpg" data-title="Trastorno bipolar" data-description="Causa cambios extremos de ánimo, alternando entre episodios de euforia (manía) y depresión profunda.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Episodios de manía (euforia, energía excesiva, impulsividad)<br>&nbsp;&nbsp;
+- Episodios de depresión (tristeza, desesperanza, fatiga)<br>&nbsp;&nbsp;
+- Cambios bruscos en el estado de ánimo"">
+              </figure>
+            </div>
+            <div class=" gallery-item">
+                <figure class="image">
+                  <!--img class="gallery-img" src="img/gallery-7-thumb.jpg" alt=""-->
+                  <img class="gallery-img" src="img/gallery-7-thumb.jpg" data-title="Esquizofrenia" data-description="Trastorno grave que afecta la percepción de la realidad. Incluye alucinaciones, delirios y pensamiento desorganizado.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Alucinaciones (ver o escuchar cosas que no existen)<br>&nbsp;&nbsp;
+- Delirios (creencias falsas)<br>&nbsp;&nbsp;
+- Pensamiento desorganizado<br>&nbsp;&nbsp;
+- Aislamiento social">
+                </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-8-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-8-thumb.jpg"
+                  data-title="Trastorno límite de la personalidad (TLP)" data-description="Dificultades para regular emociones e impulsos, relaciones inestables y miedo intenso al abandono.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Cambios intensos en el estado de ánimo<br>&nbsp;&nbsp;
+- Miedo al abandono<br>&nbsp;&nbsp;
+- Comportamientos impulsivos<br>&nbsp;&nbsp;
+- Relaciones inestables<br>&nbsp;&nbsp;
+- Sentimientos de vacío">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-9-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-9-thumb.jpg"
+                  data-title="Trastorno de la alimentación (anorexia, bulimia)" data-description="Alteraciones graves en los hábitos alimentarios y la percepción del cuerpo, que afectan la salud física y mental.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Restricción extrema de alimentos (anorexia)<br>&nbsp;&nbsp;
+- Episodios de atracones seguidos de purgas (bulimia)<br>&nbsp;&nbsp;
+- Miedo intenso a subir de peso<br>&nbsp;&nbsp;
+- Imagen corporal distorsionada">
+              </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-10-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-10-thumb.jpg"
+                  data-title="TDAH (Trastorno por déficit de atención e hiperactividad)" data-description="Problemas para mantener la atención, hiperactividad e impulsividad, especialmente desde la infancia.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Dificultad para concentrarse o seguir instrucciones<br>&nbsp;&nbsp;
+- Hiperactividad, impulsividad<br>&nbsp;&nbsp;
+- Problemas para mantenerse en una tarea<br>&nbsp;&nbsp;
+- Inquietud constante"">
+              </figure>
+            </div>
+            <div class=" gallery-item">
+                <figure class="image">
+                  <!--img class="gallery-img" src="img/gallery-11-thumb.jpg" alt=""-->
+                  <img class="gallery-img" src="img/gallery-11-thumb.jpg" data-title="Trastorno de conducta"
+                    data-description="Conducta antisocial persistente, con agresividad, mentiras, violación de reglas y falta de empatía.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Agresividad hacia personas o animales<br>&nbsp;&nbsp;
+- Destrucción de propiedad<br>&nbsp;&nbsp;
+- Mentiras frecuentes, robos<br>&nbsp;&nbsp;
+- Violación de normas sociales o escolares">
+                </figure>
+            </div>
+            <div class="gallery-item">
+              <figure class="image">
+                <!--img class="gallery-img" src="img/gallery-12-thumb.jpg" alt=""-->
+                <img class="gallery-img" src="img/gallery-12-thumb.jpg" data-title="Demencia (incluyendo Alzheimer)"
+                  data-description="Pérdida progresiva de la memoria, el lenguaje y otras habilidades cognitivas, que interfiere con la vida diaria.<br>
+Síntomas:<br>&nbsp;&nbsp;
+- Pérdida progresiva de memoria<br>&nbsp;&nbsp;
+- Desorientación en tiempo y espacio<br>&nbsp;&nbsp;
+- Cambios de personalidad<br>&nbsp;&nbsp;
+- Dificultad para realizar tareas cotidianas">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- CONSEJOS DE SALUD MENTAL -->
+<section id="consejos" class="py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <h2 class="has-text-centered has-text-primary is-size-3 mb-4" id="consejos_titulo">
+      Consejos de Salud Mental
+    </h2>
+    <p class="has-text-centered has-text-grey mb-5" id="consejos_intro">
+      Si sientes que estás atravesando una situación difícil, aquí te damos algunos consejos que te pueden ayudar:
+    </p>
+
+    <div class="columns is-multiline">
+      <!-- Consejo 1 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/habla.png" alt="Habla con alguien de confianza" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 has-text-primary" id="consejo1_titulo">Habla con alguien de confianza</p>
+            <p class="content is-hidden" id="consejo1_texto">
+              - Compartir lo que sientes con alguien de confianza alivia el peso emocional.<br>
+              - Busca a alguien que escuche sin juzgar ni criticar y que respete tus pensamientos.
+            </p>
+            <button class="button is-small is-outlined is-primary" onclick="toggleConsejo(0)">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consejo 2 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/profesional.png" alt="Busca apoyo profesional" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 has-text-success" id="consejo2_titulo">Busca apoyo profesional</p>
+            <p class="content is-hidden" id="consejo2_texto">
+              - Trabajadores sociales o líderes comunitarios que pueden ayudarte a lidiar con la situación.
+            </p>
+            <button class="button is-small is-outlined is-success" onclick="toggleConsejo(1)">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consejo 3 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/autocuidado.png" alt="Prioriza tu autocuidado" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 has-text-warning" id="consejo3_titulo">Prioriza tu autocuidado</p>
+            <p class="content is-hidden" id="consejo3_texto">
+              - Mantén tu cuerpo sano, descansa, aliméntate bien.<br>
+              - Encuentra actividades que te ayuden a despejar tu mente como leer, caminar o escuchar música.
+            </p>
+            <button class="button is-small is-outlined is-warning" onclick="toggleConsejo(2)">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consejo 4 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/limites.jpg" alt="Establece límites claros" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 has-text-grey" id="consejo4_titulo">Establece límites claros</p>
+            <p class="content is-hidden" id="consejo4_texto">
+              - Aprender a lidiar con situaciones difíciles en la vida para no tomar malas decisiones.<br>
+              - Tienes derecho a poner límites libremente.
+            </p>
+            <button class="button is-small is-outlined is-grey" onclick="toggleConsejo(3)">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consejo 5 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/comunitario.jpg" alt="Conéctate con redes de apoyo" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 has-text-danger" id="consejo5_titulo">Conéctate con redes de apoyo</p>
+            <p class="content is-hidden" id="consejo5_texto">
+              - Participa en grupos comunitarios.<br>
+              - Hablar con personas que pasaron por lo mismo puede ayudarte a sanar.
+            </p>
+            <button class="button is-small is-outlined is-danger" onclick="toggleConsejo(4)">Ver más</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consejo 6 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/noculpa.jpeg" alt="Recuerda: no eres responsable" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5 has-text-dark" id="consejo6_titulo">Recuerda: no eres responsable</p>
+            <p class="content is-hidden" id="consejo6_texto">
+              - No es tu culpa y tienes derecho a vivir en paz y con dignidad.
+            </p>
+            <button class="button is-small is-outlined is-dark" onclick="toggleConsejo(5)">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+ function toggleConsejo(index) {
+  const p = document.getElementById(`consejo${index + 1}_texto`);
+  if (p) p.classList.toggle('is-hidden');
+}
+
+</script>
+
+  <section id="contacto" class="section">
+  <div class="container has-text-centered">
+    <h1 class="title is-size-3-mobile is-size-1-tablet has-text-weight-bold" id="contacto_titulo">Contáctanos</h1>
+    <h5 class="subtitle is-size-6 mb-5" id="contacto_subtitulo">Síguenos en nuestras redes sociales</h5>
+    <div>
+      <a href="https://facebook.com" target="_blank" class="icon is-large mx-2">
+        <i class="zmdi zmdi-facebook-box zmdi-hc-2x"></i>
+      </a>
+     <a href="https://www.tiktok.com/@alliy0786?_t=ZM-8xK6sM1ryWk&_r=1" target="_blank" class="icon is-large mx-2">
+  <i class="fab fa-tiktok fa-2x"></i>
+</a>
+
+      <a href="https://www.instagram.com/alliy.oficial/" target="_blank" class="icon is-large mx-2">
+        <i class="zmdi zmdi-instagram zmdi-hc-2x"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!--div class="container" id="contacto">
+    <div class="columns is-multiline">
+      <div class="column has-text-centered is-full">
+        <h1 class="title is-size-3-mobile is-size-1-tablet has-text-weight">Contactanos</h1>
+        <h5 class="subtitle is-size-6">Enviame un mensaje</h5>
+      </div>
+      <div class="column">
+        <form action="#">
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="field">
+                <label class="label">Nombre Completo</label>
+                <div class="control">
+                  <input class="is-radiusless is-shadowless input is-medium" type="text" placeholder="Nombre completo">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <labe class="label">Número de teléfono</label>
+                    <input class="is-radiusless is-shadowless input is-medium" type="text"
+                      placeholder="Número de telefono">
+                </div>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="field">
+                <div class="control">
+                  <label class="label">Correo Electrónico</label>
+                  <input class="is-radiusless is-shadowless input is-medium" type="text"
+                    placeholder="Correo Electrónico">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <button class="is-radiusless is-shadowless button is-medium is-fullwidth" type="button">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div-->
+ <footer class="my-footer">
+  <div class="hero my-hero" style="--banner: url(../img/footer-banner.jpg); --bg-atachment: none;">
+    <div class="container-hero">
+      <div class="columns is-multiline is-centered">
+        <div class="column is-full has-text-centered">
+          <span class="has-text-white">
+            <i class="zmdi zmdi-accounts zmdi-hc-2x"></i>
+          </span>
+        </div>
+        <div class="column has-text-centered is-size-7-mobile is-full">
+          <p class="footer-p has-text-white" id="footer_derechos">© 2025 Alliy. Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="AlliyBot" agent-id="bf3d09ba-bf32-421d-a6b5-684cafb6fcb7"
+    language-code="es"></df-messenger>
+  
+  <script src="js/traductorKichwa.js"></script>
+</body>
+
+</html>
