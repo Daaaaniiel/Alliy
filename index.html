@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/material-design-iconic-font.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
   <!-- Google AdSense Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6092611891529977"
     crossorigin="anonymous"></script>
@@ -46,6 +49,10 @@
   <li class="navbar-item">
   <a data-scroll href="#consejos" class="navbar-a">Consejos</a>
 </li>
+<li class="navbar-item">
+  <a data-scroll href="#mapa-upc" class="navbar-a">Mapa UPC</a>
+</li>
+
 
   <li class="navbar-item">
     <a data-scroll href="#contacto" id="form" class="navbar-a">Contacto</a>
@@ -567,6 +574,22 @@ Síntomas:<br>&nbsp;&nbsp;
   </div>
 </section>
 
+
+
+
+<!-- MAPA -->
+
+<section id="mapa-upc" class="section">
+  <div class="container">
+    <h2 class="title is-4 has-text-centered">SITIOS DE AYUDA</h2>
+    <div id="map" style="height: 400px;"></div>
+  </div>
+</section>
+
+
+
+
+
 <script>
  function toggleConsejo(index) {
   const p = document.getElementById(`consejo${index + 1}_texto`);
@@ -677,12 +700,55 @@ Síntomas:<br>&nbsp;&nbsp;
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
-  chat-title="AlliyBot"
-  agent-id="bf3d09ba-bf32-421d-a6b5-684cafb6fcb7"
+  chat-title="Alliy"
+  agent-id="38b99f4a-c128-4508-9d46-77220717a8b5"
   language-code="es"
 ></df-messenger>
   
   <script src="js/traductorKichwa.js"></script>
+  <!-- Leaflet JS -->
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/upcmap.js"></script>
+
+<footer style="background-color: #003f3f; color: white; padding: 40px 20px; text-align: center; font-family: 'Arial', sans-serif;">
+  <img src="img/Logo_PUCE.png" alt="Logo PUCE" style="height: 60px; margin-bottom: 20px;"><br>
+
+  <h3 style="margin-bottom: 10px; color: white;">Acerca de este Proyecto</h3>
+
+  <p style="max-width: 900px; margin: auto; color: white;">
+    Este proyecto, <span style="color: white;">Alliy</span>, fue concebido y desarrollado por estudiantes de la carrera de Ingeniería en Sistemas de Información de la Pontificia Universidad Católica del Ecuador (PUCE).
+  </p>
+
+  <p style="max-width: 900px; margin: auto; color: white;">
+    Nuestra iniciativa se enmarca en la asignatura <em style="color: white;">"Emprendimiento Tecnológico con Emprendimientos Sociales"</em>, bajo la guía del Profesor <span style="color: white;">Francisco Rodríguez Clavijo</span>. Se realizó bajo la modalidad de <span style="color: white;">Aprendizaje Servicio</span>, buscando aplicar conocimientos tecnológicos para generar un impacto social positivo y directo.
+  </p>
+
+  <p style="max-width: 900px; margin: auto; color: white;">
+    Agradecemos el invaluable apoyo y auspicio de la <span style="color: white;">Coordinación Nacional de Innovación Educativa y Desarrollo Docente</span> y la <span style="color: white;">Coordinación Nacional de Aprendizaje Servicio</span> de la Pontificia Universidad Católica del Ecuador.
+  </p>
+
+  <br>
+  <h4 style="color: white;">Equipo de Desarrollo:</h4>
+  <ul style="list-style: none; padding: 0; margin: 10px 0; color: white;">
+    <li>Daniel Campoverde</li>
+    <li>Maria Lara</li>
+    <li>Esteban Singo</li>
+    <li>Diego Farinango</li>
+    <li>Luis Rodríguez</li>
+  </ul>
+
+  <p style="margin-top: 20px; color: white;"><strong style="color: white;">Profesor Guía:</strong> Ing. Francisco Rodríguez Clavijo</p>
+</footer>
+
+
 </body>
 
 </html>
